@@ -1,4 +1,4 @@
-# Py-Schedule
+# PySchedule
 
 ![](https://imgur.com/sOpXXwy.png)
 
