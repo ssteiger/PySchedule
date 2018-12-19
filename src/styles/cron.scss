@@ -1,0 +1,139 @@
+/*
+ * This file is part of the Arnapou jqCron package.
+ *
+ * (c) Arnaud Buathier <arnaud@arnapou.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code. -> ../js/assets/jqCron/LICENSE
+ */
+
+#cron {
+  .action-buttons button {
+    margin-bottom:5px;
+  }
+  .jqCron-selector {
+    position:relative;
+    background-color:$primary;
+  }
+  .jqCron-selector:hover,
+  .jqCron-selector-title:hover {
+    background-color:#0069d9;
+    border-color:#0062cc;
+  }
+  .jqCron-cross,
+  .jqCron-selector-title {
+    display:inline-block;
+    padding:.25rem .5rem;
+    font-size:.875rem;
+    font-weight:400;
+    line-height:1.5;
+    color:$tertiary;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    cursor:pointer;
+    user-select:none;
+    background-color:$primary;
+    border:2px;
+    border-radius:.2rem;
+  }
+  .jqCron-blocks {
+    display:inline-block;
+    margin-right:5px;
+     > span {
+      display:inline-block;
+      margin-right:4px;
+      margin-bottom:5px;
+    }
+  }
+  .jqCron-container.disable {
+    background:$primary;
+    border-color:$primary;
+  }
+  .jqCron-cross {
+    background-color:$warning;
+  }
+  .jqCron-cross:hover {
+    background-color:#e96b02;
+    border-color:#dc6502;
+  }
+  .jqCron-selector-list {
+    position:absolute;
+    top:1.5em;
+    left:.2em;
+    z-index:9999999;
+    padding:0;
+    margin:0;
+    color:$secondary;
+    list-style:none;
+    background:$background;
+    border:1px solid $border;
+    border-radius:.2rem;
+  }
+  .jqCron-selector-list li {
+    display:inline-block;
+    width:100%;
+    box-sizing:border-box;
+    margin:0;
+    font-size:.85em;
+    font-weight:400;
+    color:$secondary;
+    white-space:nowrap;
+    cursor:pointer;
+  }
+  .jqCron-period li,
+  .jqCron-dow li,
+  .jqCron-month li {
+    padding:.4em 1.5em;
+    text-align:left;
+  }
+  .jqCron-mins li,
+  .jqCron-dom li,
+  .jqCron-time li {
+    padding:.7em .7em;
+    text-align:right;
+  }
+  .jqCron-selector-list li.selected {
+    color:$tertiary;
+    background-color:$primary;
+  }
+  .jqCron-selector-list li:hover {
+    color:$tertiary;
+    background-color:$primary;
+  }
+  .jqCron-selector-list.cols2 {
+    width:4em;
+  }
+  .jqCron-selector-list.cols2 li {
+    width:50%;
+  }
+  .jqCron-selector-list.cols3 {
+    width:6em;
+  }
+  .jqCron-selector-list.cols3 li {
+    width:33%;
+  }
+  .jqCron-selector-list.cols4 {
+    width:8em;
+  }
+  .jqCron-selector-list.cols4 li {
+    width:25%;
+  }
+  .jqCron-selector-list.cols5 {
+    width:10em;
+  }
+  .jqCron-selector-list.cols5 li {
+    width:20%;
+  }
+  .jqCron-error .jqCron-selector-title {
+    color:$danger;
+    background:#ffeeee;
+    border:1px solid #ffdddd;
+  }
+  .jqCron-container.disable * {
+    color:#888888;
+  }
+  .jqCron-container.disable .jqCron-selector-title {
+    background:#eeeeee !important;
+  }
+}

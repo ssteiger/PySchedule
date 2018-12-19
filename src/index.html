@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PySchedule</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/css/main.css">
+  <!-- make jquery accessible as usual via $ -->
+  <script>
+    // https://stackoverflow.com/a/32621989
+    window.$ = window.jQuery = require('./js/assets/jquery-3.3.1.min.js');
+    require('electron-connect').client.create();
+  </script>
+  <!-- jqCron -->
+  <script src="js/assets/jquery.livequery.min.js"></script>
+  <script src="js/assets/jqCron/jqCron.js"></script>
+  <script src="js/assets/jqCron/jqCron.en.js"></script>
+  <!-- app -->
+  <script src="js/database.js"></script>
+  <script src="js/functions/cron.js"></script>
+  <script src="js/functions/file-list.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/footer.js"></script>
+</head>
+
+<body>
+  <!--
+  <div id="sidebar">
+  </div>
+  -->
+
+  <div id="main">
+    <div id="cronContainer" style="display:none;">
+      <div id='cron'>
+        <div class="action-buttons">
+          <button id="save" class="btn btn-sm btn-success">set timer</button>
+          <button id="disableTimer" class="btn btn-sm btn-info">disable timer</button>
+          <button id="cancel" class="btn btn-sm btn-danger">cancel</button>
+        </div>
+        <span class="current-value" style="display:none;"></span>
+      </div>
+    </div>
+    <ol id="fileList">
+      <li class="row file-template" style="display:none;">
+        <div class="col-12 col-sm-8 col-md-5">
+          <div class="infos">
+            <div class="file-name"></div>
+            <div>
+              <span class="descriptor">location: </span>
+              <span class="path"></span>
+            </div>
+            <div>
+              <span class="descriptor">added on: </span>
+              <span class="added-on"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-7">
+          <div class="settings">
+            <div class="float-left">
+              <div class="cron-info"></div>
+              <button class="btn btn-sm btn-primary edit-timer">edit timer</button>
+            </div>
+            <div class="float-right">
+              <div>
+                <button class="btn btn-sm btn-primary execute">execute now</button>
+              </div>
+              <div>
+                <button class="btn btn-sm show-logs">show logs</button>
+              </div>
+            </div>
+            <div class="row no-gutters cron-settings-container" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="logs-container">
+            <h3>Logs:</h3>
+            <div class="message-empty">&lt;empty&gt;</div>
+            <ol class="logs">
+              <li class="log log-template" style="display:none;">
+                <div class="time"></div>
+                <div class="output">
+                  <div class="line"></div>
+                </div>
+              </li>
+            </ol>
+            <div class="line line-template" style="display:none;"></div>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <div class="toggle-bar">
+        <div class="search input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">search:</span>
+          </div>
+          <input id="searchInput" type="text" class="form-control" placeholder="file name">
+          <div class="input-group-append">
+            <span id="showContent"class="input-group-text btn">+ add file</span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="head">
+        </div>
+        <div class="body">
+          <div id="fileDropArea">
+            <form action="/file-upload" class="clickable">
+              <div class="message">move new file here</div>
+            </form>
+          </div>
+        </div>
+        <div class="footer">
+          <a id="clearDb">clear database</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

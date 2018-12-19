@@ -1,0 +1,19 @@
+#fileList {
+  z-index:50;
+  float:left;
+  width:100%;
+  padding:0;
+  margin-bottom:58px;
+  color:$secondary;
+  list-style-type:none;
+
+  .file:nth-child(odd) {
+    background-color:#f7f7f9;
+  }
+  .file:last-child {
+    //border-bottom:1px solid #dee2e6;
+  }
+  .file:hover {
+    background-color:#dee2e6;
+  }
+}

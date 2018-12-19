@@ -1,0 +1,3 @@
+{"addedOn":{"$$date":1545225044561},"path":"/Users/soeren/github/PySchedule/src/examples/talk_to_me.py","logs":[],"_id":"ezjAryc0wGF8Kcvi"}
+{"addedOn":{"$$date":1545225044561},"path":"/Users/soeren/github/PySchedule/src/examples/talk_to_me.py","logs":[],"_id":"ezjAryc0wGF8Kcvi","cronJob":"5 * * * *","humanCron":"Every day at every hour:05"}
+{"$$deleted":true,"_id":"ezjAryc0wGF8Kcvi"}

@@ -1,0 +1,89 @@
+#footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  z-index:1000;
+  pointer-events:none;
+  border-top:1px solid $border;
+  border-right:1px solid $border;
+  //border-radius:.2rem;
+  .container {
+    position:relative;
+    float:right;
+    padding:0;
+    pointer-events:auto;
+    background-color:$background;
+    .toggle-bar {
+      padding:10px;
+      .input-group-prepend {
+        .input-group-text {
+          color:$primary;
+          background-color:$background;
+          border:1px solid $border;
+        }
+      }
+      .search {
+        input {
+          color:$secondary;
+          background-color:$background;
+          border:1px solid $border;
+        }
+      }
+      .input-group-append {
+        #showContent {
+          margin-left:10px;
+          color:$tertiary;
+          cursor:pointer;
+          background-color:$primary !important;
+          border-color:$primary;
+        }
+        #showContent:hover {
+          background-color:#0069d9 !important;
+          border-color:#0062cc !important;
+        }
+      }
+    }
+    .content {
+      display:none;
+      float:left;
+      width:100%;
+      padding:10px;
+      padding-top:0;
+      .body {
+        .search {
+          margin-bottom:10px;
+        }
+        #fileDropArea {
+          float:left;
+          width:100%;
+          height:200px;
+          padding:15px;
+          cursor:pointer;
+          border:2px dashed $primary;
+          .message {
+            margin-top:35px;
+            font-size:18px;
+            color:$primary;
+            text-align:center;
+          }
+        }
+        #fileDropArea:hover {
+          background-color:#f7f7f9;
+        }
+      }
+      .footer {
+        float:left;
+        width:100%;
+        margin-top:10px;
+        #clearDb {
+          float:right;
+          color:$danger;
+          cursor:pointer;
+        }
+        #clearDb:hover {
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+}

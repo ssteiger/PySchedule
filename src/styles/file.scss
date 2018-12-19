@@ -1,0 +1,83 @@
+.file {
+  padding:15px;
+  //border-bottom:1px solid $border;
+  .infos {
+    float:left;
+    margin-top:7px;
+    margin-bottom:8px;
+    .descriptor {
+      font-size:12px;
+      color:$secondary;
+    }
+    .file-name {
+      margin-bottom:10px;
+      font-size:16px;
+      color:$primary;
+    }
+    .path,
+    .added-on {
+      font-size:12px;
+      color:$primary;
+    }
+  }
+  .settings {
+    .cron-info {
+      float:left;
+      margin-top:5px;
+      margin-right:10px;
+    }
+    button.edit-timer,
+    button.execute,
+    button.show-logs {
+      font-size:13px;
+      color:$tertiary;
+    }
+    button.execute,
+    button.show-logs {
+      display:none;
+    }
+    button.show-logs {
+      width:91px; // TODO: do this dynamically
+      margin-top:5px;
+      color:$primary;
+      border:1px solid $primary;
+    }
+    button.show-logs:hover {
+      background-color:#e2e6ea;
+    }
+  }
+
+  .logs-container {
+    display:none;
+    float:left;
+    width:100%;
+    max-height:200px;
+    padding:10px;
+    overflow:scroll;
+    background-color:$background;
+    border:1px solid $primary;
+    border-radius:.2rem;
+    h3 {
+      font-size:16px;
+      color:$primary;
+    }
+    .message-empty {
+      font-size:12px;
+      color:#888888;
+    }
+    .logs {
+      padding-left:0;
+      list-style-type:none;
+      .log {
+        margin-bottom:20px;
+        font-size:12px;
+        .time {
+          color:$primary;
+        }
+        .output {
+          color:$secondary;
+        }
+      }
+    }
+  }
+}
