@@ -31,9 +31,9 @@ $ csscomb src/styles/
 
 ## Screenshots
 ![](https://imgur.com/8tCW1ux.png)
-
+---
 ![](https://imgur.com/m4r9hkv.png)
-
+---
 ![](https://imgur.com/RfYZda0.png)
 
 ## Collections of useful Python scripts
