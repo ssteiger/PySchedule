@@ -5,7 +5,7 @@
 An [electron](https://electronjs.org/) app with a nice and easy UI, with which one can schedule the execution of a python file.
 
 ## Getting started
-```
+```bash
 # install dependencies
 $ npm install
 
@@ -15,7 +15,7 @@ $ npm run dev
 There is a `.py` file in `/examples/` that you can use for a test.
 
 ## Run project formatters
-```
+```bash
 # javascript
 $ standard
 
