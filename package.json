@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "src/main.js",
   "scripts": {
-    "dev": "gulp && electron .",
+    "dev": "gulp && npm run electron",
     "watch-scss": "node-sass --watch src/styles -o src/styles"
   },
   "standard": {
