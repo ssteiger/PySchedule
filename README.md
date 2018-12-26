@@ -6,6 +6,9 @@ An [electron](https://electronjs.org/) app with a nice and easy UI, with which o
 
 ## Getting started
 ```bash
+# install electron
+$ npm install electron -g
+
 # install dependencies
 $ npm install
 
