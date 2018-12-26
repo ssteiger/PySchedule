@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "csscomb": "^4.2.0",
+    "electron": "^4.0.0",
     "electron-connect": "^0.6.3",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
