@@ -1,6 +1,6 @@
 # PySchedule
 
-![](https://imgur.com/m4r9hkv.png)
+![](https://imgur.com/84g4ucI.png)
 
 An [electron](https://electronjs.org/) app with a nice and easy UI, with which one can schedule the execution of a python file.
 
@@ -30,11 +30,11 @@ $ csscomb src/styles/
 * [ ] add more languages ([link](https://github.com/arnapou/jqcron/tree/master/src))
 
 ## Screenshots
-![](https://imgur.com/sOpXXwy.png)
+![](https://imgur.com/42Yqoqu.png)
 ---
-![](https://imgur.com/8tCW1ux.png)
+![](https://imgur.com/HxB9UfZ.png)
 ---
-![](https://imgur.com/RfYZda0.png)
+![](https://imgur.com/AlCneM1.png)
 
 ## Collections of useful Python scripts
 - [Quora - What are some useful Python scripts?](https://www.quora.com/What-are-some-useful-Python-scripts)
